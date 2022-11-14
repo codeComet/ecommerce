@@ -99,9 +99,10 @@ body,
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 3rem;
     margin-top: 20px;
-    width: 100%;
+    width: 80%;
+    margin: auto;
   }
   .product-card {
     cursor: pointer;

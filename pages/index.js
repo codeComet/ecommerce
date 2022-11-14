@@ -5,10 +5,20 @@ import { client } from "../lib/client";
 const Home = ({ products, banners }) => {
   return (
     <div>
-      {console.log(banners)}
-      <NavBar />
       <HeroBanner heroBanner={banners[0]} />
-      <Product />
+      {console.log(products)}
+
+      <div className="products-heading">
+        <h2>Best Selling watches</h2>
+        <p>Modern slick looking smartwatches</p>
+      </div>
+
+      <div className="products-container">
+        {products?.map((product) => (
+          <Product key={product._id} product={product} />
+        ))}
+      </div>
+
       <FooterBanner />
     </div>
   );
